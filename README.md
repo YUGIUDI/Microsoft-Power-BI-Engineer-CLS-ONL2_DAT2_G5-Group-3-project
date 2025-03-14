@@ -14,20 +14,6 @@ Shipping efficiency 🚚
 
 The dashboard is interactive and dynamic, allowing users to filter and drill down for detailed business insights.
 
-📂 Repository Structure
-
-📂 Superstore-PowerBI-Dashboard
-│-- 📄 README.md
-│-- 📂 Data
-│   │-- Superstore_Sales_Dataset.csv
-│-- 📂 Reports
-│   │-- Superstore_Dashboard.pbix
-│-- 📂 Scripts
-│   │-- DAX_Measures.txt
-│   │-- DimDate_DAX.txt   # DAX script for Date Table
-│-- 📂 Documentation
-│   │-- Project_Details.pdf
-
 📊 Key Performance Indicators (KPIs)
 
 Total Sales
