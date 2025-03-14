@@ -1,0 +1,67 @@
+DAX MEASURES
+
+🔹 Key Metrics
+Total Sales = SUM(Sales[Sales])
+
+Total Orders = DISTINCTCOUNT(Sales[Order ID])
+
+Average Order Value (AOV) = DIVIDE([Total Sales], [Total Orders])
+
+Profit Margin % = DIVIDE(SUM(Sales[Profit]), SUM(Sales[Sales]))
+
+Total Discount = SUM(Sales[Discount])
+
+Total Profit = SUM(Sales[Profit])
+
+Profit Per Order = DIVIDE([Total Profit], [Total Orders])
+
+🔹 Time Intelligence
+Sales YTD = TOTALYTD(SUM(Sales[Sales]), DimDate[Date])
+
+Sales MTD = TOTALMTD(SUM(Sales[Sales]), DimDate[Date])
+
+Sales QTD = TOTALQTD(SUM(Sales[Sales]), DimDate[Date])
+
+YoY Sales Growth % = DIVIDE([Total Sales] - CALCULATE([Total Sales], SAMEPERIODLASTYEAR(DimDate[Date])), CALCULATE([Total Sales], SAMEPERIODLASTYEAR(DimDate[Date])))
+
+Sales Last Year = CALCULATE([Total Sales], SAMEPERIODLASTYEAR(DimDate[Date]))
+
+Sales Running Total = CALCULATE([Total Sales], FILTER(ALL(DimDate), DimDate[Date] <= MAX(DimDate[Date])))
+
+🔹 Customer Analysis
+Total Customers = DISTINCTCOUNT(Sales[Customer ID])
+
+Orders Per Customer = DIVIDE([Total Orders], [Total Customers])
+
+New Customers = COUNTROWS(FILTER(VALUES(Sales[Customer ID]), CALCULATE(COUNT(Sales[Order ID]), ALL(Sales)) = 1))
+
+Returning Customers = [Total Customers] - [New Customers]
+
+Top Customer by Sales = TOPN(1, VALUES(Sales[Customer ID]), [Total Sales], DESC)
+
+🔹 Product & Category Analysis
+Sales by Category = SUM(Sales[Sales])
+
+Sales by Sub-Category = SUM(Sales[Sales])
+
+Top Selling Product = TOPN(1, VALUES(Sales[Product Name]), [Total Sales], DESC)
+
+Top 5 Products by Sales = TOPN(5, VALUES(Sales[Product Name]), [Total Sales], DESC)
+
+Average Discount Per Order = AVERAGE(Sales[Discount])
+
+🔹 Shipping & Operational Analysis
+Orders by Ship Mode = COUNT(Sales[Order ID])
+
+Late Shipments % = DIVIDE(COUNTROWS(FILTER(Sales, Sales[Ship Date] > Sales[Order Date] + 3)), [Total Orders])
+
+Avg Shipping Time = AVERAGE(DATEDIFF(Sales[Order Date], Sales[Ship Date], DAY))
+
+🔹 Advanced Measures
+Sales Forecast Next Month = CALCULATE([Total Sales], DATEADD(DimDate[Date], 1, MONTH))
+
+Customer Retention Rate = DIVIDE([Returning Customers], [Total Customers])
+
+Sales Growth Rate = ([Total Sales] - [Sales Last Year]) / [Sales Last Year]
+
+Top 10 Customers = TOPN(10, VALUES(Sales[Customer Name]), [Total Sales], DESC)
