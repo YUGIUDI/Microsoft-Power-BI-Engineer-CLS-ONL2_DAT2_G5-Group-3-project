@@ -1,76 +1,66 @@
 📊 Superstore Sales Dashboard - Power BI Project
 
-🔹 Project Overview
+🚀 Overview
 
-This project aims to create a professional and interactive Power BI dashboard for analyzing Superstore Sales data. The dashboard provides insights into sales performance, customer behavior, regional sales trends, and shipping efficiency.
+This Power BI project analyzes Superstore Sales data, providing insights into:
 
-🔹 Dataset Information
+Sales performance 📈
 
-Dataset Name: Superstore Sales Dataset
+Customer behavior 🛍️
 
-Number of Records: 9,800
+Regional trends 🌍
 
-Columns: 18
+Shipping efficiency 🚚
 
-Key Fields:
+The dashboard is interactive and dynamic, allowing users to filter and drill down for detailed business insights.
 
-Order ID, Order Date, Ship Date
+📂 Repository Structure
 
-Customer ID, Customer Name, Segment
+📂 Superstore-PowerBI-Dashboard
+│-- 📄 README.md
+│-- 📂 Data
+│   │-- Superstore_Sales_Dataset.csv
+│-- 📂 Reports
+│   │-- Superstore_Dashboard.pbix
+│-- 📂 Scripts
+│   │-- DAX_Measures.txt
+│   │-- DimDate_DAX.txt   # DAX script for Date Table
+│-- 📂 Documentation
+│   │-- Project_Details.pdf
 
-Region, State, City, Postal Code
+📊 Key Performance Indicators (KPIs)
 
-Product ID, Category, Sub-Category, Product Name
+Total Sales
 
-Sales, Profit, Ship Mode
+Total Orders
 
-🔹 Project Objectives
+Average Order Value (AOV)
 
-Analyze total sales, orders, and customer behavior.
+Sales by Region & Category
 
-Identify top-selling products, regions, and customer segments.
+Top Customers & Products
 
-Track sales trends over time (yearly, monthly, daily).
-
-Evaluate shipping efficiency and delivery delays.
-
-Provide interactive filters and drill-down insights.
-
-🔹 Key Performance Indicators (KPIs)
-
-Total Sales = SUM(Superstore[Sales])
-
-Total Orders = DISTINCTCOUNT(Superstore[Order ID])
-
-Total Customers = DISTINCTCOUNT(Superstore[Customer ID])
-
-Average Order Value (AOV) = DIVIDE([Total Sales], [Total Orders])
-
-Sales by Region, State, and City
-
-Top 10 Customers & Products by Sales
-
-Profit Margin % = DIVIDE([Total Profit], [Total Sales])
+Profit Margin %
 
 Sales Growth % (YoY)
 
-Late Shipments % = Percentage of delayed deliveries
+Late Shipments %
 
-🔹 Visualizations & Dashboard Structure
+📈 Dashboard Visuals
 
 📌 Page 1: Executive Summary
 
-KPIs: Total Sales, Orders, Customers, AOV
+KPIs (Total Sales, Orders, AOV)
 
-Sales by Region, Category, and Ship Mode
+Sales by Region, Category, Ship Mode
 
 Sales Trend Over Time (Line Chart)
 
 📌 Page 2: Sales Analysis
 
-Sales by Region, Category, Sub-category, Customer Segment
-
 Top-selling products and customers
+
+Sales breakdown by Region & Category
 
 Geographical Sales (Map Visual)
 
@@ -80,7 +70,7 @@ New vs Returning Customers
 
 Customer Lifetime Value (CLV)
 
-Sales by Segment (Pie Chart)
+Segment-wise Analysis (Pie Chart)
 
 📌 Page 4: Shipping & Operational Analysis
 
@@ -88,14 +78,14 @@ Orders by Ship Mode
 
 Avg Shipping Time & Late Shipments %
 
-Heatmap of Order Trends by Weekday
+Order Trends Heatmap (Weekday Performance)
 
-🔹 Power BI Features Used
+🛠 Power BI Features Used
 
-Data Transformation: Power Query for cleaning and modeling
+Power Query for Data Transformation
 
-DAX Calculations: Custom measures for KPIs and trends
+DAX Calculations for KPIs and Trends
 
-Visualizations: Line charts, bar charts, pie charts, treemaps, maps
+Advanced Visuals (Bar charts, Line charts, Maps)
 
-Interactivity: Slicers, drill-through, bookmarks
+Interactivity (Filters, Drill-Through, Bookmarks)
