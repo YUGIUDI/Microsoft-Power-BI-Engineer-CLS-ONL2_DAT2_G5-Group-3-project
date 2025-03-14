@@ -1,0 +1,159 @@
+📂 Report Pages Structure and Visuals
+
+📌 Page 1: Executive Summary
+
+Purpose: Provides an overview of key business metrics and trends.
+
+🔹 KPIs (Displayed using KPI Cards)
+
+Total Sales
+
+Total Orders
+
+Average Order Value (AOV)
+
+Profit Margin %
+
+Sales Growth % (YoY)
+
+🔹 Visuals
+
+Sales by Region (Map Visual)
+
+Sales by Category & Sub-Category (Bar Chart)
+
+Sales by Customer Segment (Pie Chart)
+
+Monthly Sales Trend (Line Chart with Forecasting)
+
+Sales vs Profit Comparison (Scatter Plot)
+
+🔹 Interactivity:
+
+Filters/Slicers: Year, Region, Category, Segment
+
+Drill-through to Sales Analysis Page
+
+📌 Page 2: Sales Analysis
+
+Purpose: Detailed analysis of sales distribution by multiple dimensions.
+
+🔹 KPIs (Displayed using Cards or Multi-Row Cards)
+
+Sales by Region, State, and City
+
+Sales by Product Category & Sub-Category
+
+Sales by Ship Mode
+
+🔹 Visuals
+
+Top 10 Customers (Bar Chart with Dynamic Ranking)
+
+Top 10 Products by Sales (Bar Chart with Sorting Options)
+
+Sales by State (Filled Map Chart)
+
+Sales and Profit by Category (Stacked Column Chart)
+
+Order Trends by Weekday (Heatmap)
+
+🔹 Interactivity:
+
+Filters: Region, State, Category, Customer
+
+Drill-through: Product & Customer Details
+
+📌 Page 3: Customer Insights
+
+Purpose: Identify customer behavior, retention, and profitability.
+
+🔹 KPIs
+
+Total Customers
+
+New vs Returning Customers
+
+Orders per Customer
+
+Customer Lifetime Value (CLV)
+
+🔹 Visuals
+
+New vs Returning Customers (Clustered Bar Chart)
+
+Customer Lifetime Value Distribution (Histogram)
+
+Top 10 Customers by Sales (Table with Conditional Formatting)
+
+Customer Segmentation (Treemap Chart)
+
+Sales by Customer Age Group (if available, Column Chart)
+
+🔹 Interactivity:
+
+Filters: Customer Segment, Region, Order Frequency
+
+Drill-through: Individual Customer Details
+
+📌 Page 4: Time-Based Analysis
+
+Purpose: Understanding sales trends over time using time intelligence functions.
+
+🔹 KPIs
+
+Sales YTD, MTD, QTD
+
+YoY Sales Growth %
+
+Sales Forecast for Next Month
+
+🔹 Visuals
+
+Monthly Sales Trend (Line Chart with Moving Average & Forecasting)
+
+Yearly Sales Comparison (Clustered Column Chart)
+
+Sales Running Total (Area Chart for Cumulative Sales)
+
+YoY Growth Analysis (Bar Chart with Conditional Formatting)
+
+Seasonal Trends in Sales (Line Chart with Date Hierarchy)
+
+🔹 Interactivity:
+
+Filters: Year, Month, Quarter
+
+Drill-through: Yearly Sales Breakdown
+
+📌 Page 5: Shipping & Operations Analysis
+
+Purpose: Evaluate shipping efficiency and operational bottlenecks.
+
+🔹 KPIs
+
+Total Orders Shipped
+
+Average Shipping Time
+
+Late Shipments %
+
+Orders by Ship Mode
+
+🔹 Visuals
+
+Orders by Ship Mode (Stacked Column Chart with Drill-Down Options)
+
+Average Shipping Time (Gauge Chart)
+
+Late Shipments % by Region (Map Chart with Tooltip Details)
+
+Order Processing Trends (Line Chart Showing Shipping Delays)
+
+Shipping Cost by Carrier (if available, Donut Chart)
+
+🔹 Interactivity:
+
+Filters: Ship Mode, Region, Date
+
+Drill-through: Shipping Delays Analysis
