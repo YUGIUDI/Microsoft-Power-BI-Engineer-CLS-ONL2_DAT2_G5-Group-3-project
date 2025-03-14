@@ -99,27 +99,3 @@ DAX Calculations: Custom measures for KPIs and trends
 Visualizations: Line charts, bar charts, pie charts, treemaps, maps
 
 Interactivity: Slicers, drill-through, bookmarks
-
-AI Insights: Forecasting, anomaly detection, key influencers
-
-🔹 How to Use This Project
-
-Download the dataset and Power BI report file (.PBIX)
-
-Load the data into Power BI Desktop
-
-Refresh the data to see real-time updates
-
-Interact with filters to explore insights
-
-Publish to Power BI Service for sharing and collaboration
-
-🔹 Future Enhancements
-
-Add profit analysis to track high and low-margin products
-
-Implement dynamic reports based on user input
-
-Automate data refresh using Power BI Gateway
-
-Develop predictive analytics using machine learning models
